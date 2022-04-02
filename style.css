@@ -70,6 +70,7 @@ main {
 }
 .buttons {
   display: flex;
+  height: 133px;
   gap: 15px;
 }
 .button {
