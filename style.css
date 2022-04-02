@@ -5,12 +5,14 @@
 * {
   padding: 0;
   margin: 0;
+  margin: 0;
 }
 body {
   background-image: url("clipboard-landing-page-master/images/bg-header-desktop.png");
   background-repeat: no-repeat;
   background-position: top;
   background-size: 100% 200px;
+  overflow-x: hidden;
 }
 .heading {
   color: hsl(210, 10%, 33%);
@@ -54,7 +56,8 @@ main {
   flex-direction: column;
   align-items: center;
   gap: 45px;
-  width: 500px;
+  overflow-x: hidden;
+  width: auto;
 }
 .text {
   display: flex;
@@ -195,6 +198,7 @@ footer {
   background-color: hsl(0, 0%, 95%);
   display: flex;
   justify-content: center;
+  overflow-x: hidden;
 }
 .footer {
   width: 82%;
@@ -234,15 +238,15 @@ footer {
   width: 28px;
   display: none;
 }
-.social-facebook{
+.social-facebook {
   width: 28px;
   height: 28px;
 }
-.social-instagram{
+.social-instagram {
   width: 28px;
   height: 28px;
 }
-.social-twitter{
+.social-twitter {
   width: 28px;
   height: 23.333px;
 }
@@ -262,217 +266,224 @@ footer {
   color: hsl(171, 66%, 44%);
   cursor: pointer;
 }
-.social-facebook:hover .socials, .social-twitter:hover .socials, .social-instagram:hover .socials{
+.social-facebook:hover .socials,
+.social-twitter:hover .socials,
+.social-instagram:hover .socials {
   display: none;
 }
-.social-facebook:hover .active, .social-twitter:hover .active, .social-instagram:hover .active{
+.social-facebook:hover .active,
+.social-twitter:hover .active,
+.social-instagram:hover .active {
   display: inline-block;
   cursor: pointer;
 }
 
 /* Media Screen */
-@media screen and (max-width:1280px) {
-  .features-2{
+@media screen and (max-width: 1280px) {
+  .features-2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 40px 0;
   }
-  .feature-class{
+  .feature-class {
     gap: 25px;
   }
-  .feature3{
+  .feature3 {
     grid-column: 1 / 3;
   }
-  .logos{
+  .logos {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 50px 0;
-    width: auto 
+    width: auto;
   }
-  .logo2{
+  .logo2 {
     grid-column: 3/4;
   }
-  .logo3{
+  .logo3 {
     grid-column: 5/6;
   }
-  .logo4{
+  .logo4 {
     grid-column: 2/3;
   }
-  .logo5{
+  .logo5 {
     grid-column: 4/5;
   }
-  .otherlogo{
+  .otherlogo {
     width: 12vw;
   }
 }
-@media screen and (max-width:920px) {
-  .footer{
+@media screen and (max-width: 920px) {
+  .footer {
     flex-direction: column;
     justify-content: center;
     gap: 30px;
     height: 200px;
   }
-  footer{
+  footer {
     height: 200px;
   }
-  .otherlogo{
+  .otherlogo {
     width: 110.517px;
   }
 }
-@media screen and (max-width:850px) {
-  .features-2{
+@media screen and (max-width: 850px) {
+  .features-2 {
     display: flex;
     flex-direction: column;
     gap: 50px;
-  }  
-  .feature-class{
+  }
+  .feature-class {
     gap: 40px;
   }
-  .firstimg{
+  .firstimg {
     flex-direction: column;
     gap: 50px;
   }
-  .feature{
+  .feature {
     align-items: center;
     text-align: center;
   }
-  .feature-para{
+  .feature-para {
     width: 300px;
   }
-  .para-1{
+  .para-1 {
     width: 575px;
   }
-  .footer-para{
+  .footer-para {
     width: 575px;
   }
-  .computer-img{
+  .computer-img {
     width: 395.5px;
     height: auto;
   }
 }
 @media screen and (max-width: 700px) {
-  body{
+  body {
     background-image: url("clipboard-landing-page-master/images/bg-header-mobile.png");
     background-size: 100% 400px;
   }
-  .header-heading{
-      width: 400px;
+  .header-heading {
+    width: 400px;
   }
-  .header-para{
-      width: 450px;
+  .header-para {
+    width: 450px;
   }
-  .para-1{
-      width: 450px;
+  .para-1 {
+    width: 450px;
   }
-  .device-img{
-      width: 500px;
+  .device-img {
+    width: 500px;
   }
 }
 @media screen and (max-width: 600px) {
-  .logos{
+  .logos {
     display: flex;
     flex-direction: column;
     gap: 75px 0;
-  }  
-  .otherlogo{
+  }
+  .otherlogo {
     width: 150px;
   }
-  .left{
+  .left {
     flex-direction: column;
     gap: 30px;
   }
-  .options{
+  .options {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .footer-list{
+  .footer-list {
     text-align: center;
   }
-  .footer{
+  .footer {
     height: 450px;
   }
-  footer{
+  footer {
     height: 450px;
   }
-  .list{
+  .list {
     line-height: 40px;
   }
-  .right{
+  .right {
     gap: 30px;
   }
-  .buttons{
+  .buttons {
     flex-direction: column;
     gap: 30px;
   }
-  .button{
+  .button {
     width: 80vw;
   }
-  .header-para{
+  .header-para {
     width: 345px;
   }
-  .end-heading{
+  .end-heading {
     width: 390px;
   }
-  .feature-heading{
+  .feature-heading {
     width: 390px;
   }
-  .para{
+  .para {
     width: 300px;
   }
-  .head{
+  .head {
     align-items: center;
   }
-  .feature2-para{
+  .feature2-para {
     width: 350px;
   }
-  .header-para{
+  .header-para {
     width: 345px;
   }
-  .para-1{
+  .para-1 {
     width: 340px;
   }
-  .keeptrackheading{
+  .keeptrackheading {
     width: 350px;
   }
-  .computer-img{
+  .computer-img {
     width: 85%;
   }
-  .device-img{
+  .device-img {
     width: 85%;
   }
 }
-@media screen and (max-width:525px) {
-  .heading{
+@media screen and (max-width: 525px) {
+  .heading {
     font-size: 26px;
   }
-  .end-heading{
+  .end-heading {
     width: 315px;
   }
-  .para{
+  .para {
     font-size: 16px;
   }
-  .header-para{
+  .header-para {
     width: 305px;
   }
-  .feature2-para{
+  .feature2-para {
     width: 325px;
   }
-  .feature-heading{
+  .feature-heading {
     width: 300px;
   }
-  .accessclipboardheading{
+  .accessclipboardheading {
     width: 300px;
   }
-  .keeptrack  heading{
+  .keeptrack heading {
     width: 300px;
   }
-  .para-1{
+  .para-1 {
     width: 300px;
   }
-  .header-heading{
+  .header-heading {
     width: 280px;
+  }
+  .header {
+    width: 100%;
   }
 }
