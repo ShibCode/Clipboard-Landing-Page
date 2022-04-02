@@ -70,7 +70,7 @@ main {
 }
 .buttons {
   display: flex;
-  height: 133px;
+  height: 53px;
   gap: 15px;
 }
 .button {
@@ -415,6 +415,7 @@ footer {
   .buttons {
     flex-direction: column;
     gap: 30px;
+    height: 133px;
   }
   .button {
     width: 80vw;
