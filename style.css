@@ -99,7 +99,7 @@ main {
 .firstimg {
   display: flex;
   gap: 6vw;
-  width: 100vw;
+  width: 100%;
   align-items: center;
 }
 .features {
